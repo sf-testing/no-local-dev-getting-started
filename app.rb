@@ -11,14 +11,14 @@ get "/contacts" do
   @contacts = Contact.all
   erb :index
 end
-class Evaluation < ActiveRecord::Base
-  self.table_name = 'salesforce.Evaluation__c'
-end
+#class Evaluation < ActiveRecord::Base
+ # self.table_name = 'salesforce.Evaluation__c'
+#end
 
-get "/evaluations" do
-  @evaluations = Evaluation__c.all
-  erb :index
-end
+#get "/evaluations" do
+  #@evaluations = Evaluation__c.all
+ # erb :index
+#end
 get "/" do
   erb :home
 end
