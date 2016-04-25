@@ -6,14 +6,20 @@
       <th>Last Name</th>
       <th>Email</th>
     </tr>
-
-    <% @contacts.each do |contact| %>
+  <% @contacts.each do |contact| %>
       <tr>
         <td><%= contact.firstname %></td>
         <td><%= contact.lastname %></td>
         <td><%= contact.email %></td>
       </tr>
     <% end %>
+ <!--   <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.firstname %></td>
+        <td><%= contact.lastname %></td>
+        <td><%= contact.email %></td>
+      </tr>
+    <% end %> --->
   </table>
 
 </div>
