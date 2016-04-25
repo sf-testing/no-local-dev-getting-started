@@ -6,11 +6,11 @@
       <th>Last Name</th>
       <th>Email</th>
     </tr>
-  <% @contacts.each do |contact| %>
+  <% @evaluations.each do |evaluation| %>
       <tr>
-        <td><%= contact.firstname %></td>
-        <td><%= contact.lastname %></td>
-        <td><%= contact.email %></td>
+        <td><%= evaluation.name %></td>
+        <td><%= evaluation.Make_Public__c %></td>
+        <td><%= evaluation.ASA_Staff_Notes__c %></td>
       </tr>
     <% end %>
  <!--   <% @contacts.each do |contact| %>
