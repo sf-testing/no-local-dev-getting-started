@@ -12,11 +12,11 @@ get "/contacts" do
   erb :index
 end
 class Evaluation < ActiveRecord::Base
-  self.table_name = 'salesforce.evaluation__c'
+  self.table_name = 'salesforce.Evaluation__c'
 end
 
 get "/evaluations" do
-  @evaluations = Evaluation.all
+  @evaluations = Evaluation__c.all
   erb :index
 end
 get "/" do
